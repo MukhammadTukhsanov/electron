@@ -1,0 +1,113 @@
+.login-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+.img-holder {
+  z-index: 0;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  min-height: 700px;
+  height: 100%;
+  padding: 60px;
+  text-align: center;
+}
+.img-holder .info-holder img {
+  max-width: 534px;
+  animation: zoom-in-img 50s linear 0s infinite;
+  transform-origin: center center;
+}
+.img-holder .info-holder {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.login-layout {
+  display: inline-block;
+  position: absolute;
+  padding: 60px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-content {
+  background-color: transparent;
+  padding: 125px 60px 60px;
+  perspective: 800px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-items p {
+  color: #3c486b90;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.form-items h3 {
+  color: #3c486b;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.form-items {
+  text-align: start;
+  padding: 35px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  transition: all 0.4s ease;
+}
+
+.other-links {
+  margin: 38px 0 30px 0;
+}
+.other-links-item {
+  background-color: #f7f7f7;
+  padding: 9px 9px;
+  display: flex;
+  align-items: center;
+  color: #3c486b;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.other-links-item .telegram-icon {
+  font-size: 18px;
+  color: #0088cc;
+}
+.other-links-item .whatsapp-icon {
+  font-size: 18px;
+  color: #25d366;
+}
+
+@media (min-height: 700px) {
+  .img-holder {
+    position: fixed;
+  }
+}
+@media (max-width: 992px) {
+  .login-layout {
+    padding: 125px 30px 60px;
+  }
+  .form-content {
+    padding: 125px 0 0;
+  }
+}
+@media (max-width: 768px) {
+  .login-layout {
+    padding: 30px 15px;
+  }
+}
